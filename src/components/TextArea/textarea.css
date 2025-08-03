@@ -1,0 +1,30 @@
+#letters-container {
+  background-color: var(--container-background);
+  border: 2px solid var(--border-color);
+  width: 50%;
+  max-height: 200px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  margin-bottom: 40px;
+}
+
+#type-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#reset-container {
+  text-align: center;
+  width: 100%;
+}
+
+#reset {
+  font-size: 28px;
+  display: inline;
+}
+#reset:hover {
+  cursor: pointer;
+}

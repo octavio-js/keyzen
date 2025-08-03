@@ -1,4 +1,11 @@
 import React from "react";
-import styles from './statistics.module.css';
+import './statistics.css';
 
-export default function Statistics() {}
+export default function Statistics() {
+  return (
+    <div>
+      <p id="accuracy">Accuracy: 0%</p>
+      <p id="stats" title="Total / Correct / Incorrect / Missed Spaces">0 / 0 / 0 / 0</p>
+    </div>
+  );
+}
