@@ -48,11 +48,6 @@ KeyZen transforms the mundane task of typing practice into a mindful experience.
 ### 🌘 Dark Theme
 ![KeyZen in Night Lotus dark theme](resources/media/darkview.png)
 
-### 🎥 Video
-<video autoplay loop muted>
-  <source src="./resources/media/page.mp4" type="video/mp4">
-</video>
-
 ## Getting Started
 
 ### Prerequisites
@@ -133,8 +128,7 @@ keyzen/
         ├── black-icon.png # Light theme logo
         ├── white-icon.png # Dark theme logo
         ├── lightview.png # Screenshot of page with light theme
-        ├── blackview.png # Screenshot of page with dark theme
-        └── page.mp4 # A preview of the page being used
+        └── blackview.png # Screenshot of page with dark theme
 ```
 
 ### Key Components
