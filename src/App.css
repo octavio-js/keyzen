@@ -1,38 +1,3 @@
-:root {
-  --background-color: #dfe6e6;
-  --container-background: #e4f1ef;
-  --text-color: #2e3440;
-  --border-color: #b0c4c4;
-  --letters-color: #2e3440;
-  --hover-effect: #8abbb3;
-  --clicked-buttonBg: #a8d4cc;
-  --clicked-buttonText: #20302e;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  height: 100vh;
-}
-
-h1, h2, h3,
-h4, h5, h6 {
-  font-family: sans-serif;
-}
-
-p {
-  font-family: sans-serif;
-}
-
 header {
   width: 100%;
   height: 15%;
