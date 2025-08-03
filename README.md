@@ -43,10 +43,10 @@ KeyZen transforms the mundane task of typing practice into a mindful experience.
 ## Screenshots
 
 ### ☀️ Light Theme
-![KeyZen in Soft Focus light theme](resources/media/lightview.png)
+![KeyZen in Soft Focus light theme](public/lightview.png)
 
 ### 🌘 Dark Theme
-![KeyZen in Night Lotus dark theme](resources/media/darkview.png)
+![KeyZen in Night Lotus dark theme](public/darkview.png)
 
 ## Getting Started
 
