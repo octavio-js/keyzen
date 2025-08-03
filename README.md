@@ -4,6 +4,15 @@ KeyZen is a modern, minimalist typing practice application designed to help user
 
 **🌐 [Try KeyZen Online](https://octavio-js.github.io/keyzen)**
 
+## 📋 Table of Contents
+- [Overview](#overview)
+- [Core Features](#core-features)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+- [Usage Guide](#usage-guide)
+- [Technical Architecture](#technical-architecture)
+- [Contributing](#contributing)
+
 ## Overview
 
 KeyZen transforms the mundane task of typing practice into a mindful experience. The application features performance tracking, customizable word counts, and a collection of beautifully designed themes that adapt to both light and dark preferences. Whether you're a beginner looking to build fundamental typing skills or an advanced typist seeking to refine your accuracy, KeyZen provides the perfect environment for practice.
@@ -29,6 +38,20 @@ KeyZen transforms the mundane task of typing practice into a mindful experience.
 ### 🖥️ Responsive Design
 - **Smooth Scrolling**: Automatic text scrolling keeps the current character in view
 - **Keyboard Navigation**: Full keyboard support for all interactions
+- **Mobile Friendly**: Responsive design works on desktop, tablet, and mobile devices
+
+## Screenshots
+
+### ☀️ Light Theme
+![KeyZen in Soft Focus light theme](resources/media/lightview.png)
+
+### 🌘 Dark Theme
+![KeyZen in Night Lotus dark theme](resources/media/darkview.png)
+
+### 🎥 Video
+<video autoplay loop muted>
+  <source src="./resources/media/page.mp4" type="video/mp4">
+</video>
 
 ## Getting Started
 
@@ -36,7 +59,12 @@ KeyZen transforms the mundane task of typing practice into a mindful experience.
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 - No additional software installation required
 
-### Installation
+### Quick Start
+1. **Online**: Visit [KeyZen](https://octavio-js.github.io/keyzen) to start typing immediately
+2. **Local**: Download and open `index.html` in any modern browser
+
+
+### Local Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/octavio-js/keyzen.git
@@ -46,6 +74,7 @@ KeyZen transforms the mundane task of typing practice into a mindful experience.
 2. Open the application:
    - **Option 1**: Use the `Live Server` extension in VS Code
    - **Option 2**: Double-click `index.html` to open in your default browser
+   - **Option 3**: Open `index.html` directly in your browser
 
 ### Running the Application
 The application runs entirely in the browser with no server-side dependencies. Simply open `index.html` in any modern web browser to start practicing immediately.
@@ -89,13 +118,23 @@ keyzen/
     ├── css/
     │   └── styles.css     # Main stylesheet with theme system
     ├── js/
-    │   └── script.js      # Core application logic
-    ├── json/
-    │   └── randomWords.json # Word database for practice sessions
+    │   ├── script.js      # Main application entry point
+    │   └── modules/       # Modular JavaScript components
+    │       ├── constants.js      # Application constants and configuration
+    │       ├── domElements.js    # DOM element references and selectors
+    │       ├── stateManager.js   # Application state management
+    │       ├── statistics.js     # Performance tracking and statistics
+    │       ├── themeManager.js   # Theme system and customization
+    │       ├── typingEngine.js  # Core typing logic and validation
+    │       ├── uiManager.js     # User interface management
+    │       └── wordGenerator.js # Word generation and text processing
     └── media/
-        ├── icon.png       # Application icon
+        ├── icon.ico       # Application icon
         ├── black-icon.png # Light theme logo
-        └── white-icon.png # Dark theme logo
+        ├── white-icon.png # Dark theme logo
+        ├── lightview.png # Screenshot of page with light theme
+        ├── blackview.png # Screenshot of page with dark theme
+        └── page.mp4 # A preview of the page being used
 ```
 
 ### Key Components
@@ -106,12 +145,11 @@ The application uses CSS custom properties to implement a dynamic theming system
 - Automatic theme persistence using localStorage
 
 #### Word Generation
-- JSON-based word database with over 1,000 common English words
+- JS-based word database with over 1,000 common English words
 - Random selection algorithm for varied practice sessions
 - Dynamic text rendering with individual character tracking
 
 #### Performance Tracking
-- Real-time character-by-character accuracy calculation
 - Comprehensive statistics including missed spaces
 - Visual feedback system with immediate color coding
 
@@ -136,8 +174,17 @@ We welcome contributions from the community! Whether you're fixing bugs, adding 
 - **Accessibility**: Improve keyboard navigation and screen reader support
 - **Documentation**: Enhance guides, add tutorials, or improve code comments
 - **Smooth Transitions**: Add smooth transitions across the page for a better experience
+- **Bug Fixes**: Help identify and fix any issues
+- **UI/UX Improvements**: Suggest and implement interface enhancements
 
 These are just some examples of features that can be added! Anyone can come with their own ideas for features.
+
+### Reporting Issues
+Before creating an issue, please:
+1. Check if the issue has already been reported
+2. Provide a clear description of the problem
+3. Include steps to reproduce the issue
+4. Specify your browser and operating system
 
 ### Development Guidelines
 - Follow existing code style and naming conventions
