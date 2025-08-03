@@ -18,13 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-/*
-after you finish typing one round and you begin to type another round, if you reset in the middle
-of typing, the first character already appears as incorrect and the second letter is next.
-resetting the text via Enter doesnt fix the issue, but resetting the text via the Reset button
-somehow resets the text corectly, but if you reset the text with Enter again, the same issue appears.
-*/
-
 document.body.addEventListener('keydown', getKey);
 document.body.addEventListener('keydown', event => {
   if (event.key === 'Enter') {
