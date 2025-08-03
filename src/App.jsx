@@ -1,6 +1,11 @@
 import './App.css';
 import React from 'react';
+import Header from './components/Header/Header.jsx';
 
 export default function App() {
-  return <h1>KeyZen</h1>
+  return (
+    <>
+      <Header/>
+    </>
+  );
 }
