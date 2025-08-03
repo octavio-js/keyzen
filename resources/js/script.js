@@ -19,12 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.body.addEventListener('keydown', getKey);
-
-/*
-The bug is essentially a duplicate event listener registration that causes the typing logic
-to execute multiple times per keypress after using the Enter reset.
-*/
-
 document.body.addEventListener('keydown', event => {
   if (event.key === 'Enter') {
     resetPage();

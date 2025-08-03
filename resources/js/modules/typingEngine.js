@@ -11,6 +11,9 @@ export function getKey(event) {
   if (event.key === ' ') {
     event.preventDefault();
   }
+  if (event.key === 'Enter') {
+    return;
+  }
   changeNextCharColor(state.currentNextLetterCol, state.currentNextSpaceCol);
 
   const rect = state.letterElements[state.currentLetter].getBoundingClientRect();
