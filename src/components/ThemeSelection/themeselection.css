@@ -1,0 +1,34 @@
+footer {
+  width: 100%;
+}
+
+#change-theme {
+  width: 14%;
+}
+
+#change-theme:hover,
+.theme:hover,
+.theme-choice:hover,
+.show-themes {
+  cursor: pointer;
+}
+
+#light-mode,
+#dark-mode {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.light-themes,
+.dark-themes {
+  text-align: left;
+}
+
+.light-themes,
+.dark-themes,
+#light-mode,
+#dark-mode {
+  display: none;
+}
