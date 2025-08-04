@@ -1,10 +1,4 @@
 import { themes } from './constants.js';
-import { state } from "./stateManager.js";
-import { resetPage } from './uiManager.js';
-import {
-  changeThemeDiv, lightModeDiv, darkModeDiv, themeChoices,
-  lightThemes, darkThemes, icon
-} from './domElements.js';
 
 function changeIcon(mode) {
   if (mode) {

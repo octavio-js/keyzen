@@ -1,6 +1,5 @@
 import './App.css';
 import { generateText } from './modules/wordGenerator.js';
-import { resetPage } from './modules/uiManager.js';
 import React, { useCallback, useEffect, useState } from 'react';
 import Header from './components/Header/Header.jsx';
 import TextArea from './components/TextArea/TextArea.jsx';
