@@ -51,7 +51,7 @@ export default function App() {
 
   useEffect(() => {
     generateText(setLetters, amountOfWords);
-  },[amountOfWords]); // rendering the text only works on every refresh, for now
+  },[amountOfWords]);
 
   return (
     <>
