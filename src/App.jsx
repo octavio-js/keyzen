@@ -26,12 +26,13 @@ export default function App() {
   // for now it works, will look into it after i finish the react migration
 
   useEffect(() => {
+    console.log('amountOfWords changed to:', amountOfWords);
     generateText(text, setText, setLetters, amountOfWords);
   },[amountOfWords]); // rendering the text only works on every refresh, for now
 
   return (
     <>
-      <Header setAmountOfWords={setAmountOfWords}/>
+      <Header amountOfWords={amountOfWords} setAmountOfWords={setAmountOfWords}/>
       <TextArea letters={letters}/>
       <ThemeSelection/>
     </>
