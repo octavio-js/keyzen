@@ -1,5 +1,3 @@
-import { state } from "./stateManager.js";
-import { lettersContainer, accuracy, stats } from "./domElements.js";
 import { getKey } from './typingEngine.js';
 import { generateText } from './wordGenerator.js';
 

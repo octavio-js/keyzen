@@ -1,6 +1,4 @@
 import { getKey } from './typingEngine.js';
-import { accuracy, stats } from './domElements.js';
-import { state } from './stateManager.js';
 
 export function showStatistics() {
   if (state.currentLetter === state.letters.length) {
