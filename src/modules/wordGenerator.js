@@ -1,8 +1,7 @@
 import { wordList } from "./constants.js";
 
-export function generateText(text, setText, setLetters, amountOfWords) {
+export function generateText(setLetters, amountOfWords) {
   setLetters([]);
-  setText('');
   let allText = '';
   let allLetters = [];
   for (let i = 0; i < amountOfWords; i++) {
@@ -13,7 +12,6 @@ export function generateText(text, setText, setLetters, amountOfWords) {
       allText += ' ' + wordList[randomIndex];
     }
   }
-  setText(allText);
   for (let i = 0; i < allText.length; i++) {
     allLetters.push(allText[i]);
   }

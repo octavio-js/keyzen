@@ -6,7 +6,6 @@ import TextArea from './components/TextArea/TextArea.jsx';
 import ThemeSelection from './components/ThemeSelection/ThemeSelection.jsx';
 
 export default function App() {
-  const [text, setText] = useState('');
   const [letters, setLetters] = useState([]);
   const [currentLetter, setCurrentLetter] = useState(0);
   const [correctChars, setCorrectChars] = useState(0);
@@ -26,7 +25,7 @@ export default function App() {
   // for now it works, will look into it after i finish the react migration
 
   useEffect(() => {
-    generateText(text, setText, setLetters, amountOfWords);
+    generateText(setLetters, amountOfWords);
   },[amountOfWords]); // rendering the text only works on every refresh, for now
 
   return (
