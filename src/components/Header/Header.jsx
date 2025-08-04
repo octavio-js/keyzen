@@ -3,7 +3,7 @@ import './header.css';
 import icon from '../../assets/black-icon.png';
 import WordSelection from '../WordSelection/WordSelection.jsx';
 
-export default function Header() {
+export default function Header(props) {
   return (
     <header>
       <div id="hero">
@@ -14,7 +14,7 @@ export default function Header() {
           <h1>KeyZen</h1>
         </div>
       </div>
-      <WordSelection/>
+      <WordSelection setAmountOfWords={props.setAmountOfWords}/>
     </header>
   );
 }

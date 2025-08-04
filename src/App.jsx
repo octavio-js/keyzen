@@ -31,7 +31,7 @@ export default function App() {
 
   return (
     <>
-      <Header setAmountOfWords={setAmountOfWords}/>
+      <Header amountOfWords={amountOfWords} setAmountOfWords={setAmountOfWords}/>
       <TextArea letters={letters}/>
       <ThemeSelection/>
     </>
