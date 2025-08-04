@@ -56,7 +56,15 @@ export default function App() {
   return (
     <>
       <Header amountOfWords={amountOfWords} setAmountOfWords={setAmountOfWords}/>
-      <TextArea letters={letters} onReset={handleReset}/>
+      <TextArea
+        letters={letters}
+        onReset={handleReset}
+        accuracyDisplay={accuracyDisplay}
+        statsDisplay={statsDisplay}
+        correctChars={correctChars}
+        incorrectChars={incorrectChars}
+        missedSpaces={missedSpaces}
+      />
       <ThemeSelection/>
     </>
   );

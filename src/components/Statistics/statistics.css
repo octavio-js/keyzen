@@ -1,9 +1,10 @@
+#statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #accuracy {
   font-size: 20px;
   font-family: sans-serif;
-  display: none;
-}
-
-#stats {
-  display: none;
 }

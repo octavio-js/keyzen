@@ -12,7 +12,14 @@ export default function TextArea(props) {
         ))}
       </div>
       <div id="type-info">
-        <Statistics/>
+        <Statistics
+          accuracyDisplay={props.accuracyDisplay}
+          statsDisplay={props.statsDisplay}
+          correctChars={props.correctChars}
+          incorrectChars={props.incorrectChars}
+          missedSpaces={props.missedSpaces}
+          letters={props.letters}
+        />
         <Reset onReset={props.onReset}/>
       </div>
     </main>
