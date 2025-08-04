@@ -13,7 +13,7 @@ export default function TextArea(props) {
       </div>
       <div id="type-info">
         <Statistics/>
-        <Reset/>
+        <Reset onReset={props.onReset}/>
       </div>
     </main>
   );

@@ -1,5 +1,3 @@
-import { state } from "./stateManager.js";
-import { lettersContainer } from "./domElements.js";
 import { showStatistics } from './statistics.js';
 
 function isLetterCorrect(event) {
