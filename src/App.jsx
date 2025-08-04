@@ -22,9 +22,8 @@ export default function App() {
   const [currentIncorCharCol, setCurrentIncorCharCol] = useState('#d47fa6');
   const [currentNextLetterCol, setCurrentNextLetterCol] = useState('#f0a202');
   const [currentNextSpaceCol, setCurrentNextSpaceCol] = useState('#c2b8a3');
-
-  console.log(text);
-  console.log(letters);
+  // i feel like this isnt the best way of storing the app's state
+  // for now it works, will look into it after i finish the react migration
 
   useEffect(() => {
     generateText(text, setText, setLetters, amountOfWords);
