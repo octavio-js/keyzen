@@ -1,6 +1,7 @@
 import React from "react";
 import './textarea.css';
 import Statistics from "../Statistics/Statistics.jsx";
+import Reset from "../Reset/Reset.jsx";
 
 export default function TextArea() {
   return (
@@ -8,10 +9,7 @@ export default function TextArea() {
       <div id="letters-container"></div>
       <div id="type-info">
         <Statistics/>
-        <div id="reset-container">
-          <p id="reset" className="hover">⟳</p>
-          <p>Press <b>Enter</b> or click Reset to try again</p>
-        </div>
+        <Reset/>
       </div>
     </main>
   );

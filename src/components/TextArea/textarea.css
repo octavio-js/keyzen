@@ -15,16 +15,3 @@
   justify-content: center;
   align-items: center;
 }
-
-#reset-container {
-  text-align: center;
-  width: 100%;
-}
-
-#reset {
-  font-size: 28px;
-  display: inline;
-}
-#reset:hover {
-  cursor: pointer;
-}
