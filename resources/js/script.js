@@ -11,6 +11,7 @@ import { state } from './modules/stateManager.js';
 
 import { sidebar } from './modules/domElements.js';
 import { sidebarBtn } from './modules/domElements.js';
+import { closeBtn } from './modules/domElements.js';
 import { toggleSidebar } from './modules/uiManager.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -49,3 +50,4 @@ document.body.addEventListener('click', (e) => {
 
 resetButton.addEventListener('click', resetPage);
 sidebarBtn.addEventListener('click', toggleSidebar);
+closeBtn.addEventListener('click', toggleSidebar);
