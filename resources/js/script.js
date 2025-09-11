@@ -41,5 +41,11 @@ document.body.addEventListener('click', (event) => {
   }
 });
 
+document.body.addEventListener('click', (e) => {
+  if (!sidebar.classList.contains('sidebar-collapsed') && !sidebar.contains(e.target) && e.target !== sidebarBtn) {
+    toggleSidebar();
+  }
+});
+
 resetButton.addEventListener('click', resetPage);
 sidebarBtn.addEventListener('click', toggleSidebar);
