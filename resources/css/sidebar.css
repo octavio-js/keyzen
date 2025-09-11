@@ -1,0 +1,25 @@
+.sidebar-btn {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: var(--container-background);
+  transition: width 0.3s ease,
+  background 0.3s ease, color 0.3 ease;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-collapsed {
+  width: 0;
+}
