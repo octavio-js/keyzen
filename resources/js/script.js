@@ -9,6 +9,10 @@ import {
 } from './modules/domElements.js';
 import { state } from './modules/stateManager.js';
 
+import { sidebar } from './modules/domElements.js';
+import { sidebarBtn } from './modules/domElements.js';
+import { toggleSidebar } from './modules/uiManager.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('keyzen-theme');
   if (savedTheme && themes[savedTheme]) {
@@ -38,3 +42,4 @@ document.body.addEventListener('click', (event) => {
 });
 
 resetButton.addEventListener('click', resetPage);
+sidebarBtn.addEventListener('click', toggleSidebar);

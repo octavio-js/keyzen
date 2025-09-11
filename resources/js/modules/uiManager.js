@@ -3,6 +3,8 @@ import { lettersContainer, accuracy, stats } from "./domElements.js";
 import { getKey } from './typingEngine.js';
 import { generateText } from './wordGenerator.js';
 
+import { sidebar } from "./domElements.js";
+
 export function resetPage() {
   state.letterElements.forEach(letter => {
     lettersContainer.removeChild(letter);
@@ -18,4 +20,8 @@ export function resetPage() {
   stats.style.display = 'none';
   document.body.addEventListener('keydown', getKey);
   generateText();
+}
+
+export function toggleSidebar() {
+  sidebar.classList.toggle('sidebar-collapsed');
 }

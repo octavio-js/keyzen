@@ -10,3 +10,5 @@ export const darkModeDiv = document.querySelector('#dark-mode');
 export const lightThemes = document.querySelector('.light-themes');
 export const darkThemes = document.querySelector('.dark-themes');
 export const themeChoices = document.querySelectorAll('.theme-choice');
+export const sidebarBtn = document.querySelector('.sidebar-btn');
+export const sidebar = document.querySelector('.sidebar');
