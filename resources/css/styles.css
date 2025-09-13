@@ -60,11 +60,6 @@ button:hover {
   background-color: var(--text-color);
 }
 
-.selected {
-  background-color: var(--clicked-buttonBg);
-  color: var(--clicked-buttonText);
-}
-
 .hover:hover {
   color: var(--hover-effect);
 }
@@ -79,11 +74,6 @@ button:hover {
   width: 75px;
   height: auto;
   display: inline;
-}
-
-#amount-of-words {
-  text-align: center;
-  margin-right: 10px;
 }
 
 .letter {
@@ -139,10 +129,6 @@ button:hover {
 /*? Themes */
 footer {
   width: 100%;
-}
-
-#change-theme {
-  width: 14%;
 }
 
 #change-theme:hover,
