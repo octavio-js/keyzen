@@ -1,0 +1,94 @@
+/*! Universal Styles */
+.padding {
+  padding: 10px 5px;
+}
+
+.selected {
+  background-color: var(--clicked-buttonBg);
+}
+
+.container-header {
+  margin: 0;
+  width: 100%;
+}
+.container-header:hover {
+  color: var(--hover-effect);
+  cursor: pointer;
+}
+
+.sidebar-btn {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: var(--container-background);
+  transition: width 0.5s ease;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-collapsed {
+  width: 0;
+}
+
+/*? Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  margin-bottom: 50px;
+}
+
+.sidebar-header>h1 {
+  margin: 0;
+}
+
+.close-btn {
+  border-radius: 50%;
+  position: relative;
+  left: 43%;
+  width: 25px;
+  height: 25px;
+  font-weight: 700;
+}
+
+/*? Word Count Selection */
+#amount-of-words {
+  margin-top: 10px;
+  display: none;
+}
+
+/*? Theme Selection */
+/*.theme-selection {}*/
+
+/*? Collaboration */
+.collaboration {
+  margin-top: auto;
+}
+
+.collaboration-links {
+  display: flex;
+  gap: 10px;
+}
+
+.collaboration-link {
+  font-size: 34px;
+}
+.collaboration-link:link {
+  color: var(--text-color);
+}
+.collaboration-link:visited {
+  color: var(--text-color);
+}
+.collaboration-link:hover {
+  cursor: pointer;
+  color: var(--hover-effect);
+}

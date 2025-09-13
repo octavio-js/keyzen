@@ -9,6 +9,11 @@ import {
 } from './modules/domElements.js';
 import { state } from './modules/stateManager.js';
 
+import { sidebar } from './modules/domElements.js';
+import { sidebarBtn } from './modules/domElements.js';
+import { closeBtn } from './modules/domElements.js';
+import { toggleSidebar } from './modules/uiManager.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('keyzen-theme');
   if (savedTheme && themes[savedTheme]) {
@@ -37,4 +42,12 @@ document.body.addEventListener('click', (event) => {
   }
 });
 
+document.body.addEventListener('click', (e) => {
+  if (!sidebar.classList.contains('sidebar-collapsed') && !sidebar.contains(e.target) && e.target !== sidebarBtn) {
+    toggleSidebar();
+  }
+});
+
 resetButton.addEventListener('click', resetPage);
+sidebarBtn.addEventListener('click', toggleSidebar);
+closeBtn.addEventListener('click', toggleSidebar);

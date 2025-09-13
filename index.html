@@ -1,89 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/styles.css" />
+    <link rel="stylesheet" href="./resources/css/sidebar.css" />
+    <link rel="icon" href="./resources/media/icon.ico" />
+    <script type="module" src="./resources/js/script.js" defer></script>
+    <title>KeyZen - Type in Tranquility</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./resources/css/styles.css">
-  <link rel="icon" href="./resources/media/icon.ico">
-  <script type="module" src="./resources/js/script.js" defer></script>
-  <title>KeyZen - Type in Tranquility</title>
-</head>
-
-<body>
-  <header>
-    <div id="hero">
-      <div id="image">
-        <img src="./resources/media/black-icon.png" class="keyzen-logo" alt="KeyZen logo">
-      </div>
-      <div>
+  <body>
+    <div class="sidebar sidebar-collapsed">
+      <header class="sidebar-header padding">
         <h1>KeyZen</h1>
+        <button class="close-btn" type="button">x</button>
+      </header>
+      <div class="word-count-selection padding">
+        <h3 class="container-header">Amount of Words</h3>
+        <div id="amount-of-words">
+          <button class="word-choice selected">30</button>
+          <button class="word-choice">50</button>
+          <button class="word-choice">100</button>
+          <button class="word-choice">250</button>
+        </div>
       </div>
-    </div>
-    <div id="amount-of-words">
-      <h3>Select amount of words</h3>
-      <button class="word-choice selected">30</button>
-      <button class="word-choice">50</button>
-      <button class="word-choice">100</button>
-      <button class="word-choice">250</button>
-    </div>
-  </header>
-  <main>
-    <div id="letters-container"></div>
-    <div id="type-info">
-      <p id="accuracy">Accuracy: 0%</p>
-      <p id="stats" title="Total / Correct / Incorrect / Missed Spaces">0 / 0 / 0 / 0</p>
-      <div id="reset-container">
-        <p id="reset" class="hover">⟳</p>
-        <p>Press <b>Enter</b> or click Reset to try again</p>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div id="change-theme">
-      <h3 class="show-themes hover">Change Theme</h3>
-      <div id="light-mode" class="theme">
-        <h4 class="show-themes hover">Light Themes</h4>
-        <div class="light-themes">
-          <div class="light-theme">
-            <p id="soft-focus" class="theme-choice hover">Soft Focus</p>
+      <div class="theme-selection padding">
+        <h3 id="change-theme" class="container-header show-themes">Change Theme</h3>
+        <div id="light-mode" class="theme">
+          <h4 class="show-themes hover">Light Themes</h4>
+          <div class="light-themes">
+            <div class="light-theme">
+              <p id="soft-focus" class="theme-choice hover">Soft Focus</p>
+            </div>
+            <div class="light-theme">
+              <p id="sunrise-grove" class="theme-choice hover">Sunrise Grove</p>
+            </div>
+            <div class="light-theme">
+              <p id="crystal-lake" class="theme-choice hover">Crystal Lake</p>
+            </div>
+            <div class="light-theme">
+              <p id="lavender-bloom" class="theme-choice hover">
+                Lavender Bloom
+              </p>
+            </div>
+            <div class="light-theme">
+              <p id="zen-dunes" class="theme-choice hover">Zen Dunes</p>
+            </div>
           </div>
-          <div class="light-theme">
-            <p id="sunrise-grove" class="theme-choice hover">Sunrise Grove</p>
-          </div>
-          <div class="light-theme">
-            <p id="crystal-lake" class="theme-choice hover">Crystal Lake</p>
-          </div>
-          <div class="light-theme">
-            <p id="lavender-bloom" class="theme-choice hover">Lavender Bloom</p>
-          </div>
-          <div class="light-theme">
-            <p id="zen-dunes" class="theme-choice hover">Zen Dunes</p>
+        </div>
+        <div id="dark-mode" class="theme">
+          <h4 class="show-themes hover">Dark Themes</h4>
+          <div class="dark-themes">
+            <div class="dark-theme">
+              <p id="night-lotus" class="theme-choice hover">Night Lotus</p>
+            </div>
+            <div class="dark-theme">
+              <p id="shadow-fern" class="theme-choice hover">Shadow Fern</p>
+            </div>
+            <div class="dark-theme">
+              <p id="muted-tides" class="theme-choice hover">Muted Tides</p>
+            </div>
+            <div class="dark-theme">
+              <p id="charcoal-tea" class="theme-choice hover">Charcoal Tea</p>
+            </div>
+            <div class="dark-theme">
+              <p id="velvet-dusk" class="theme-choice hover">Velvet Dusk</p>
+            </div>
           </div>
         </div>
       </div>
-      <div id="dark-mode" class="theme">
-        <h4 class="show-themes hover">Dark Themes</h4>
-        <div class="dark-themes">
-          <div class="dark-theme">
-            <p id="night-lotus" class="theme-choice hover">Night Lotus</p>
-          </div>
-          <div class="dark-theme">
-            <p id="shadow-fern" class="theme-choice hover">Shadow Fern</p>
-          </div>
-          <div class="dark-theme">
-          <p id="muted-tides" class="theme-choice hover">Muted Tides</p>
-          </div>
-          <div class="dark-theme">
-            <p id="charcoal-tea" class="theme-choice hover">Charcoal Tea</p>
-          </div>
-          <div class="dark-theme">
-            <p id="velvet-dusk" class="theme-choice hover">Velvet Dusk</p>
-          </div>
+      <div class="collaboration padding">
+        <h3>Collaboration</h3>
+        <p>Help this application grow and be better by collaborating!</p>
+        <div class="collaboration-links">
+          <a class="collaboration-link" href="https://github.com/octavio-js/keyzen" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+          <a class="collaboration-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=vizdoagaoctavio33@gmail.com" target="_blank"><ion-icon name="mail"></ion-icon></a>
         </div>
       </div>
     </div>
-  </footer>
-</body>
-
+    <header>
+      <button type="button" class="sidebar-btn">☰</button>
+      <div id="hero">
+        <div id="image">
+          <img src="./resources/media/black-icon.png" class="keyzen-logo" alt="KeyZen logo"/>
+        </div>
+        <div>
+          <h1>KeyZen</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="letters-container"></div>
+      <div id="type-info">
+        <p id="accuracy">Accuracy: 0%</p>
+        <p id="stats" title="Total / Correct / Incorrect / Missed Spaces">0 / 0 / 0 / 0</p>
+        <div id="reset-container">
+          <p id="reset" class="hover">⟳</p>
+          <p>Press <b>Enter</b> or click Reset to try again</p>
+        </div>
+      </div>
+    </main>
+    <!-- Icons loading scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
