@@ -60,12 +60,14 @@
   font-weight: 700;
 }
 
-/*? Theme Selection */
-/*.theme-selection {}*/
-
+/*? Word Count Selection */
 #amount-of-words {
   margin-top: 10px;
+  display: none;
 }
+
+/*? Theme Selection */
+/*.theme-selection {}*/
 
 /*? Collaboration */
 .collaboration {

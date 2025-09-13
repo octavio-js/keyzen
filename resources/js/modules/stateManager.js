@@ -9,6 +9,7 @@ export const state = {
   areThemesOpen: false,
   areLightThemesOpen: false,
   areDarkThemesOpen: false,
+  isWordSelectionOpen: false,
   amountOfWords: 30,
   selectedButton: null,
   currentLetterColor: '#2e3440',

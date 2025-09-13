@@ -1,5 +1,8 @@
 import { state } from './stateManager.js';
-import { lettersContainer, accuracy, selectWordsButtons } from './domElements.js';
+import {
+  lettersContainer, accuracy, selectWordsButtons,  
+  wordCountSelection, wordButtonsDiv
+} from './domElements.js';
 import { wordList } from './constants.js';
 import { changeLettersColor } from './typingEngine.js';
 
@@ -47,6 +50,7 @@ function highlightWordCount(button){
 
 selectWordsButtons.forEach(button => {
   button.addEventListener('click', event => {
+    event.stopPropagation();
     button.blur();
     state.selectedButton = button;
     button.classList.add('selected');
@@ -54,4 +58,20 @@ selectWordsButtons.forEach(button => {
     highlightWordCount(state.selectedButton);
     generateText();
   });
+});
+
+wordCountSelection.addEventListener('click', () => {
+  if (state.isWordSelectionOpen) {
+    wordButtonsDiv.style.display = 'none';
+  } else {
+    wordButtonsDiv.style.display = 'block';
+  }
+  state.isWordSelectionOpen = !state.isWordSelectionOpen;
+});
+
+document.addEventListener('click', (e) => {
+  if (!wordCountSelection.contains(e.target) && !wordButtonsDiv.contains(e.target) && state.isWordSelectionOpen) {
+    wordButtonsDiv.style.display = 'none';
+    state.isWordSelectionOpen = false;
+  }
 });
